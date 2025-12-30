@@ -1,13 +1,6 @@
-cd /home/z/my-project
-
-# Create vercel.json file
-cat > vercel.json << 'EOF'
 {
-  "buildCommand": "bun run build",
+  "buildCommand": "npm run build",
   "framework": "nextjs",
-  "devCommand": "bun run dev"
+  "devCommand": "npm run dev",
+  "installCommand": "npm install"
 }
-EOF
-
-# Verify file was created
-ls -la vercel.json
