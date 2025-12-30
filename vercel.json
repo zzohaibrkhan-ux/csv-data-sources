@@ -1,0 +1,13 @@
+cd /home/z/my-project
+
+# Create vercel.json file
+cat > vercel.json << 'EOF'
+{
+  "buildCommand": "bun run build",
+  "framework": "nextjs",
+  "devCommand": "bun run dev"
+}
+EOF
+
+# Verify file was created
+ls -la vercel.json
